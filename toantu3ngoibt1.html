@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a">
+<input type="number" id="b">
+<button type="button" onclick="result()">Ket qua</button>
+<p id="ketqua"></p>
+<script>
+    function result() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        ketqua = (a + b)<4 ?'Below' : 'Over';
+
+        document.getElementById("ketqua").innerHTML = ketqua;
+    }
+
+</script>
+</body>
+</html>
